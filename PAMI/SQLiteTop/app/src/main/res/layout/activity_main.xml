@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/Azonix"
+            android:gravity="left"
+            android:text="CADASTRE"
+            android:textColor="@color/verdin"
+            android:textSize="60dp"
+            android:textStyle="bold"
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/Azonix"
+            android:gravity="left"
+            android:text="SE"
+            android:textColor="@color/cinzin"
+            android:textSize="50dp"
+            android:textStyle="bold"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+
+        android:backgroundTint="@color/verdin"
+        android:fontFamily="@font/Azonix"
+        android:hint="Nome"
+        android:textColor="#fff"
+        android:textColorHint="@color/cinzin" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/verdin"
+        android:fontFamily="@font/Azonix"
+        android:hint="Email"
+        android:textColor="#fff"
+        android:textColorHint="@color/cinzin" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/verdin"
+        android:fontFamily="@font/Azonix"
+        android:hint="Telefone"
+        android:textColor="#fff"
+        android:textColorHint="@color/cinzin" />
+
+    <EditText
+        android:id="@+id/edtAssunto"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/verdin"
+        android:fontFamily="@font/Azonix"
+        android:hint="Assunto"
+        android:textColor="#fff"
+        android:textColorHint="@color/cinzin" />
+
+    <EditText
+        android:id="@+id/edtMsg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/verdin"
+        android:fontFamily="@font/Azonix"
+        android:hint="Mensagem"
+        android:textColor="#fff"
+        android:textColorHint="@color/cinzin" />
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:text="Enviar"
+        android:textColor="@color/pretin"
+        android:layout_margin="10dp"
+        android:background="@color/verdin"
+        android:fontFamily="@font/Azonix"
+        android:onClick="enviar"
+        >
+
+</Button>
+</LinearLayout>
+
+
+

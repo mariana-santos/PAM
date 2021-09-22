@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/preto"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Área"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        android:textSize="30dp"
+        android:layout_margin="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URI Online Judge | 1164"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:id="@+id/txtEnunciado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Na matemática, um número perfeito é um número inteiro para o qual a soma de todos os seus divisores positivos próprios (excluindo ele mesmo) é igual ao próprio número. Por exemplo o número 6 é perfeito, pois 1+2+3 é igual a 6. Sua tarefa é escrever um programa que imprima se um determinado número é perfeito ou não."
+        android:layout_gravity="left|center|right"
+        android:gravity="left|center|right"
+        android:textColor="@color/branco"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/branco"
+        android:textColor="@color/branco"
+        android:textSize="20dp"
+        android:hint="Digite um número..."
+        android:backgroundTint="@color/verdeClaro"
+        android:id="@+id/edtNumero"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calcular"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/verde"
+        android:textColor="@color/branco"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:onClick="calcular"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        android:id="@+id/txtResultado"/>
+
+
+
+
+
+
+</LinearLayout>

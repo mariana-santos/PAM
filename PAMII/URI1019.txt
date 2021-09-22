@@ -1,0 +1,152 @@
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, ScrollView, TextInput, 
+  TouchableHighlight, Dimensions} from 'react-native';
+
+  var width = Dimensions.get('window').width; //full width
+  var height = Dimensions.get('window').height; //full height
+
+export default function App() {
+
+  const [seg, setSeg] = useState();
+  const [result, setResult] = useState('0:0:0');
+
+  const calculo = (si)=>{
+    var h = 0, min = 0, s = 0, result;
+    const seg = parseInt(seg);
+    h = si / 3600;
+    min = (si % 3600) / 60;
+    s = (si % 3600) % 60;
+
+    h = Math.floor(h);
+    min = Math.floor(min);
+    
+    result = h+":"+min+":"+s;
+    setResult (result);
+  }
+
+  return (
+    <View style={styles.container}>
+      <ScrollView>
+        {/*Textos do cabeçalho*/}
+        <View style={styles.enunciado}>
+          <Text style={styles.cabec}>URI Online Judge | 1019</Text>
+          <Text style={styles.title}>Conversão de Tempo</Text>
+          <Text style={styles.cabec}>Adaptado por Neilor Tonin, URI Brasil</Text>
+          <Text style={styles.cabecn}>Timelimit: 1</Text>
+        </View>
+
+        {/*Enunciado*/}
+        <View style={styles.enunciado}>
+          <Text style={styles.te}>
+          Leia um valor inteiro, que é o tempo de duração em segundos de um determinado evento em uma fábrica, e informe-o expresso no formato horas:minutos:segundos.
+          </Text>
+          <Text style={styles.es}>Entrada</Text>
+          <Text style={styles.te}>O arquivo de entrada contém um valor inteiro N.</Text>
+          <Text style={styles.es}>Saída</Text>
+          <Text style={styles.te}>Imprima o tempo lido no arquivo de entrada (segundos), convertido para horas:minutos:segundos, conforme exemplo fornecido.
+          </Text>
+        </View>
+
+        {/*Entrada*/}
+        <TextInput
+        placeholder="Insira  entrada em segundos aqui"
+        keyboardType="numeric"
+        placeholderTextColor='#525252'
+        onChangeText={text=>setSeg(text)}
+        style={styles.entrada}>
+        </TextInput>
+
+        <TouchableHighlight
+        style={styles.botao}
+        underlayColor='#525252'
+        onPress={()=>calculo(seg)}>
+          <Text style={styles.txtbtn}>CALCULAR</Text>
+        </TouchableHighlight>
+
+        {/*Resultado*/}
+        <Text style={styles.title}>Segundos: {seg}</Text>
+        <Text style={styles.title}>Tempo convertido: {result}</Text>
+
+      </ScrollView>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 17
+  },
+
+  enunciado: {
+    paddingTop: 50,
+    paddingLeft: 15,
+    paddingRight: 15
+  },
+
+  cabec: {
+    textAlign: "center",
+    fontSize: 15,
+    color: '#2f2f2f'
+  },
+
+  cabecn: {
+    textAlign: "center",
+    fontSize: 15,
+    color: '#2f2f2f',
+    fontWeight: 'bold'
+  },
+
+  title: {
+    fontSize: 30,
+    textAlign: 'center',
+    color: '#000',
+    fontWeight: 'bold'
+  },
+
+  es: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginTop: 10,
+  },
+
+  te: {
+    fontSize: 16
+  },
+
+  entrada: {
+    borderColor: '#09f',
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingLeft: 15,
+    paddingRight: 15,
+    paddingTop: 5,
+    paddingBottom: 5,
+    margin: 15
+  },
+
+  botao: {
+    marginLeft: 15,
+    marginRight: 15, 
+    marginBottom: 15,
+    backgroundColor: '#09f',
+    color: '#fff',
+    borderRadius: 5,
+    paddingLeft: 15,
+    paddingRight: 15,
+    paddingTop: 5,
+    paddingBottom: 5,
+    width: width - 30
+  },
+
+  txtbtn: {
+    lineHeight: 35,
+    fontSize: 20,
+    color: 'white',
+    textAlign: 'center'
+  }
+});
+

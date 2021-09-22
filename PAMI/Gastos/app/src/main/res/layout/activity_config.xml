@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Config"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configurações"
+        android:textSize="50dp"
+        android:fontFamily="@font/neosansstdregular"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar salário: (R$)"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1500.00"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:id="@+id/edtSal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add categoria: "
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="22dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:id="@+id/edtCategoria"
+        android:hint="Descrição da categoria"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="SALVAR"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:onClick="Salvar"
+        android:background="@drawable/arredondar"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/menu"
+        android:layout_marginTop="70dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goAdd"
+                android:src="@drawable/add"
+                android:layout_marginRight="100dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goHome"
+                android:src="@drawable/home"
+                android:layout_marginRight="100dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goConfig"
+                android:src="@drawable/config"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

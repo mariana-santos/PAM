@@ -1,0 +1,77 @@
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
+
+export default function App() {
+
+  const linguagens = [
+    {
+      idLing: 1, 
+      nomeLing: 'Javascript',
+      criador: 'Brendan Eich'
+    },
+    {
+      idLing: 2, 
+      nomeLing: 'Java',
+      criador: 'James Gosling'
+    },
+    {
+      idLing: 3, 
+      nomeLing: 'Python',
+      criador: 'Guido van Rossum'
+    },
+    {
+      idLing: 4, 
+      nomeLing: 'Swift', 
+      criador: 'Chris Lattner'
+    },
+    {
+      idLing: 5, 
+      nomeLing: 'PHP',
+      criador: 'Rasmus Lerdorf'
+    }
+  ];
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.head}>Linguagens de Programação mais usadas atualmente:</Text>
+      <FlatList
+        data = {linguagens}
+        keyExtractor = {item=>item.idLing}
+        renderItem = {({item})=>
+        <View>
+          <Text style={styles.content}>#{item.idLing} {item.nomeLing} - {item.criador}</Text>
+        </View>
+      }
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 100,
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  content: {
+    flex: 1,
+    backgroundColor: '#E0CFF2',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 20,
+    margin: 5,
+    padding: 10
+  },
+  
+  head: {
+    fontSize: 30,
+    margin: 45,
+    textAlign: 'center',
+    color: '#000'
+  }
+});
+

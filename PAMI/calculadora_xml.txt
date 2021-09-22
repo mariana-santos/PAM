@@ -1,0 +1,22 @@
+  <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Digite o primeiro numero"
+            android:id="@+id/txtPeso"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Digite o segundo numero"
+            android:id="@+id/txtAltura"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular IMC"
+            android:onClick="btnSomarOnClick"/>
+
+       

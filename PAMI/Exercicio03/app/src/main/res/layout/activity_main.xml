@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="117dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdFatorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fatorial" />
+
+        <RadioButton
+            android:id="@+id/rdFibonacci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fibonacci" />
+
+        <RadioButton
+            android:id="@+id/rdPotencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Potência" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtPrimeiroValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="Primeiro Valor"
+        android:inputType="none|number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/edtSegundoValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="Segundo Valor"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrimeiroValor" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="203dp"
+        android:layout_height="203dp"
+        android:layout_marginBottom="72dp"
+        android:text="Resultado"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="161dp"
+        android:onClick="verificar"
+        android:text="verificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSegundoValor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

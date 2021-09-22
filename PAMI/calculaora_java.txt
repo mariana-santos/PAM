@@ -1,0 +1,24 @@
+ednumero1 = (EditText) findViewById(R.id.ednumero1);         
+ednumero2 = (EditText) findViewById(R.id.ednumero2);         
+btsomar  = (Button) findViewById(R.id.btsomar); 
+         
+btsomar.setOnClickListener(new View.OnClickListener() { 
+ 	 	 	 
+ @Override 
+ public void onClick(View v) { 
+         	 	 	 
+double num1 = Double.parseDouble(ednumero1.getText().toString());      	 	 	 	         	 	  
+double num2= Double.parseDouble(ednumero2.getText().toString());                    
+double soma = num1 + num2; 
+         	 	 	 	 	 
+AlertDialog.Builder dialogo = new AlertDialog.Builder(CalculadoraActivity.this); 
+         	 	 	 	 	 
+dialogo.setTitle("Resultado soma"); 
+         	 	 	 	 	 
+dialogo.setMessage("A soma é " + soma); 
+         	 	 	 	 	 
+dialogo.setNeutralButton("OK", null); 
+         	 	 	 	 	 
+     dialogo.show(); 
+         	 	 	 	 	 
+         	  } 

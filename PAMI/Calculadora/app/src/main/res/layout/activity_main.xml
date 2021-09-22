@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textSize="40dp"
+        android:layout_margin="30dp"
+        android:textColor="@color/azul"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o primeiro valor"
+        android:id="@+id/edtPrimeiroValor"
+        android:layout_margin="30dp"
+        />
+
+    <EditText
+        android:id="@+id/edtSegundoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200px"
+        android:hint="Digite o segundo valor"
+        android:layout_margin="30dp"/>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/btnMais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15px"
+            android:background="@color/azul"
+            android:onClick="somar"
+            android:text="➕"
+            android:textColor="@color/branco"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btnMenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15px"
+            android:background="@color/azul"
+            android:onClick="subtrair"
+            android:text="➖"
+            android:textColor="@color/branco"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➗"
+            android:id="@+id/btnDividir"
+            android:onClick="dividir"
+            android:background="@color/azul"
+            android:textColor="@color/branco"
+            android:layout_margin="15px"
+            android:textSize="30dp"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✖"
+            android:id="@+id/btnMultiplicar"
+            android:onClick="multiplicar"
+            android:background="@color/azul"
+            android:textColor="@color/branco"
+            android:layout_margin="15px"
+            android:textSize="30dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+

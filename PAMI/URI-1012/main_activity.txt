@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/preto"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Área"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URI Online Judge | 1012"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mostrar enunciado"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/verde"
+        android:textColor="@color/branco"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:onClick="mostrar"
+        />
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/txtEnunciado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        android:textSize="13dp"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o número A"
+        android:layout_margin="5dp"
+        android:id="@+id/numeroA"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/branco"
+        android:height="40dp"
+        android:backgroundTint="@color/verde"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o número B"
+        android:layout_margin="5dp"
+        android:id="@+id/numeroB"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/branco"
+        android:height="40dp"
+        android:backgroundTint="@color/verde"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o número C"
+        android:layout_margin="5dp"
+        android:id="@+id/numeroC"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/branco"
+        android:height="40dp"
+        android:backgroundTint="@color/verde"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calcular"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/verde"
+        android:textColor="@color/branco"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:onClick="calcular"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtTri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Triângulo:"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtCir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Círculo: "
+        android:textColor="@color/branco"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtTrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Trapézio: "
+        android:textColor="@color/branco"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtQuad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quadrado: "
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/txtRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retângulo: "
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/branco"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>

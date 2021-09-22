@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/interessante"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/neosansstdregular"
+        android:text="Adicione sua despesa"
+        android:textColor="@color/branco"
+        android:textSize="55dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/arredondar">
+
+        <EditText
+            android:id="@+id/edtTit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/verde"
+            android:hint="Título"
+            android:textColor="#fff"
+            android:textColorHint="@color/branco"
+            android:autofillHints=""
+            android:inputType="text"
+            tools:ignore="HardcodedText,TextFields" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtValor"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/verde"
+                android:hint="Valor (R$)"
+                android:textColor="#fff"
+                android:textColorHint="@color/branco"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:id="@+id/edtData"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/verde"
+                android:hint="Data"
+                android:textColor="#fff"
+                android:textColorHint="@color/branco"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/verde"
+            android:hint="Descrição"
+            android:textColor="#fff"
+            android:textColorHint="@color/branco"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:text="Categoria:"
+            android:textColor="@color/branco"
+            android:textSize="16dp"/>
+        <Spinner
+            android:id="@+id/spnCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAddDespesa"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/arredondarbtn"
+        android:layout_height="50dp"
+        android:textColor="@color/roxin"
+        android:textSize="18dp"
+        android:text="Adicionar Despesa"
+        android:onClick="addDespesa"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/menu"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goAdd"
+                android:src="@drawable/add"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goHome"
+                android:src="@drawable/home"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goConfig"
+                android:src="@drawable/config"
+                android:layout_marginBottom="15dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

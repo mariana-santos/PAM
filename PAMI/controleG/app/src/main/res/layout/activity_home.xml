@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:background="@color/roxin"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/arredondarbaixo"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salário: "
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/branco"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/neosansstdlight"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" R$1500.00"
+            android:layout_weight="1"
+            android:textColor="@color/branco"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/salario"
+            android:textSize="45sp"
+            android:fontFamily="@font/neosansstdbold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gasto por Categoria"
+        android:textColor="@color/branco"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left"
+        android:textSize="33sp"
+        android:fontFamily="@font/neosansstdbold">
+    </TextView>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sombra">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 1000"
+            android:layout_margin="5dp"
+            android:textColor="@color/cinza"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:fontFamily="@font/neosansstdlight"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sombra">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 1000"
+            android:layout_margin="5dp"
+            android:textColor="@color/cinza"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:fontFamily="@font/neosansstdlight"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sombra">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 1000"
+            android:layout_margin="5dp"
+            android:textColor="@color/cinza"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:fontFamily="@font/neosansstdlight"
+            >
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suas despesas:"
+        android:layout_marginLeft="15dp"
+        android:textSize="50dp"
+        android:fontFamily="@font/neosansstdregular"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:id="@+id/despesas"
+        android:layout_margin="15dp"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/sombramaior"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Despesas Recentes"
+            android:textColor="@color/branco"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:textSize="33sp"
+            android:fontFamily="@font/neosansstdbold"
+            >
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sombraembaixo">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/add"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_margin="9dp"
+                android:layout_weight="1"
+                android:textColor="@color/cinza"
+                android:textSize="30sp"
+                android:fontFamily="@font/neosansstdregular"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/preto"
+                android:textSize="24sp"
+                android:fontFamily="@font/neosansstdlight"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/neosansstdlight"
+            android:background="@drawable/sombraembaixo">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/add"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_margin="9dp"
+                android:layout_weight="1"
+                android:textColor="@color/cinza"
+                android:textSize="30sp"
+                android:fontFamily="@font/neosansstdregular"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/preto"
+                android:fontFamily="@font/neosansstdlight"
+                android:textSize="24sp"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/sombrafalida">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/add"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_margin="9dp"
+                android:layout_weight="1"
+                android:textColor="@color/cinza"
+                android:textSize="30sp"
+                android:fontFamily="@font/neosansstdregular"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/preto"
+                android:fontFamily="@font/neosansstdlight"
+                android:textSize="24sp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goAdd"
+            android:src="@drawable/add"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"/>
+
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/menu"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goAdd"
+                android:src="@drawable/add"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goHome"
+                android:src="@drawable/home"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goConfig"
+                android:src="@drawable/config"
+                android:layout_marginBottom="15dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Config"
+    android:orientation="vertical"
+    android:background="@drawable/backConfig">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/neosansstdregular"
+        android:text="Balanço Financeiro"
+        android:textColor="@color/branco"
+        android:textSize="45dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar salário: (R$)"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="22dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1500.00"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:id="@+id/edtSal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add categoria: "
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:id="@+id/edtCategoria"
+            android:hint="Descrição da categoria"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="SALVAR"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:onClick="Salvar"
+        android:background="@drawable/arredondar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sombra">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descontos Liquido"
+                android:layout_margin="5dp"
+                android:textColor="@color/preto"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:fontFamily="@font/neosansstdbold"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$ -1000"
+                android:layout_margin="20dp"
+                android:textColor="@color/rosin"
+                android:textSize="27sp"
+                android:gravity="center"
+                android:fontFamily="@font/neosansstdlight"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sombra">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Economico"
+                android:layout_margin="5dp"
+                android:textColor="@color/preto"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:fontFamily="@font/neosansstdbold"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mal Admnstrado"
+                android:layout_margin="5dp"
+                android:textColor="@color/rosin"
+                android:textSize="27sp"
+                android:gravity="center"
+                android:fontFamily="@font/neosansstdlight"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/menu"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goAdd"
+                android:src="@drawable/add"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goHome"
+                android:src="@drawable/home"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goConfig"
+                android:src="@drawable/config"
+                android:layout_marginBottom="15dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
